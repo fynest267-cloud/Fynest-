@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Fynest</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Botão flutuante WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 50;
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- CABEÇALHO -->
+  <header class="text-center p-8 bg-gray-900">
+    <img src="Fynest.jpg" alt="Logo da Empresa" class="mx-auto mb-4 w-32 rounded-full">
+    <h1 class="text-4xl font-bold mb-2">Fynest</h1>
+    <p class="text-lg">Transformando sua mentalidade financeira e pessoal.</p>
+  </header>
+
+  <!-- PRODUTO EM DESTAQUE -->
+  <section class="p-8 text-center">
+    <h2 class="text-3xl font-bold mb-4">Ebook em Destaque</h2>
+    <img src="Erros.png" alt="Capa do Ebook" class="mx-auto rounded-xl shadow mb-4">
+    <p class="mb-4">Aprenda os princípios da educação financeira, mentalidade milionária e desenvolvimento pessoal em um só guia.</p>
+
+    <!-- PREÇOS -->
+    <div class="mb-4">
+      <span class="text-lg text-gray-400 line-through">12.000 KZ</span>
+      <span class="text-3xl font-bold text-green-400 ml-2">9.000 KZ</span>
+    </div>
+
+    <!-- BOTÃO TOPO -->
+    <a href="https://encurtador.com.br/6OLbf" target="_blank"
+       class="bg-white text-black px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-300 transition inline-block">
+      🚀 Obter Agora
+    </a>
+  </section>
+
+  <!-- DESCRIÇÃO DO EBOOK -->
+  <section class="p-8 text-center">
+    <h2 class="text-3xl font-bold mb-4">Sobre o Ebook</h2>
+
+    <div id="descricao" class="text-lg max-h-32 overflow-hidden transition-all duration-500">
+      Este guia revela os principais erros que a maioria das pessoas comete sem perceber e que as mantém presas a uma vida de dificuldades financeiras.
+      Você vai descobrir como identificar esses sabotadores invisíveis, entender como funcionam e aprender estratégias práticas para eliminá-los definitivamente.
+      Mais do que teoria, este ebook oferece um passo a passo para reorganizar suas finanças, mudar sua mentalidade e começar a construir riqueza de verdade.
+    </div>
+
+    <button id="toggleBtn" class="mt-4 bg-gray-800 text-white px-6 py-2 rounded-lg hover:bg-gray-700 transition">
+      Ver mais...
+    </button>
+  </section>
+
+  <!-- URGÊNCIA / CONTADOR -->
+  <section class="text-center p-8 bg-red-600 text-white">
+    <h2 class="text-2xl font-bold mb-4">⚡ Oferta Limitada ⚡</h2>
+    <p class="mb-4">Muitos já resolveram seus principais problemas financeiros com este ebook. Não fique para trás!</p>
+    <p class="text-lg font-semibold mb-2">De <span class="line-through">12.000 KZ</span> por apenas <span class="text-yellow-300">9.000 KZ</span></p>
+    <p class="text-lg font-semibold mb-2">Válido até:</p>
+    <div id="countdown" class="text-3xl font-bold"></div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="bg-gray-900 p-8">
+    <h2 class="text-3xl font-bold text-center mb-6">O que dizem nossos leitores</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- CLIENTE 1 -->
+      <div class="bg-white text-black p-4 rounded-xl shadow text-center">
+        <img src="cliente 1.jpg" alt="Cliente João" class="w-20 h-20 rounded-full mx-auto mb-3">
+        <p>“Esse ebook mudou minha forma de lidar com dinheiro. Simples e direto!”</p>
+        <span class="block mt-2 font-bold">— João S.</span>
+      </div>
+      <!-- CLIENTE 2 -->
+      <div class="bg-white text-black p-4 rounded-xl shadow text-center">
+        <img src="cliente 2.jpg" alt="Cliente Maria" class="w-20 h-20 rounded-full mx-auto mb-3">
+        <p>“Apliquei os conceitos e já vi resultado na minha vida financeira.”</p>
+        <span class="block mt-2 font-bold">— Maria F.</span>
+      </div>
+      <!-- CLIENTE 3 -->
+      <div class="bg-white text-black p-4 rounded-xl shadow text-center">
+        <img src="cliente 3.jpg" alt="Cliente Pedro" class="w-20 h-20 rounded-full mx-auto mb-3">
+        <p>“Vale cada página! Mentalidade milionária é real.”</p>
+        <span class="block mt-2 font-bold">— Pedro L.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTÃO DO MEIO (WhatsApp) -->
+  <section class="text-center p-8">
+    <a href="https://wa.me/244957214218?text=Olá%20Nilton,%20quero%20saber%20mais%20sobre%20o%20ebook."
+       target="_blank"
+       class="bg-green-500 text-white px-10 py-4 rounded-xl text-xl font-bold hover:bg-green-600 transition block mx-auto w-fit">
+      💬 Saber Mais no WhatsApp
+    </a>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="text-center p-8">
+    <a href="https://encurtador.com.br/6OLbf" target="_blank"
+       class="bg-white text-black px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-300 transition inline-block">
+      🚀 Obter Agora
+    </a>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="text-center p-6 text-sm text-white/80 bg-gray-900">
+    © 2025 Fynest. Todos os direitos reservados.
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="https://wa.me/244957214218?text=Olá%20Nilton,%20quero%20saber%20mais%20sobre%20o%20ebook."
+     target="_blank"
+     class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+         alt="WhatsApp" class="w-16 h-16">
+  </a>
+
+  <!-- SCRIPT CONTADOR -->
+  <script>
+    const countDownDate = new Date("Aug 20, 2025 23:59:59").getTime();
+    const x = setInterval(function () {
+      const now = new Date().getTime();
+      const distance = countDownDate - now;
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "❌ Oferta Expirada";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML =
+        days + "d " + hours + "h " + minutes + "m " + segundos + "s ";
+    }, 1000);
+
+    // Script Ver Mais
+    const descricao = document.getElementById("descricao");
+    const toggleBtn = document.getElementById("toggleBtn");
+    let expandido = false;
+
+    toggleBtn.addEventListener("click", () => {
+      expandido = !expandido;
+      if (expandido) {
+        descricao.classList.remove("max-h-32");
+        toggleBtn.innerText = "Ver menos...";
+      } else {
+        descricao.classList.add("max-h-32");
+        toggleBtn.innerText = "Ver mais...";
+      }
+    });
+  </script>
+
+</body>
+</html>
